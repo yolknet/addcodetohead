@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" type="plugin" group="system" method="upgrade">
+	<name>plg_dupi_addcodetohead</name>
+	<author>Dutch Pilot</author>
+	<creationDate>September 2022</creationDate>
+	<copyright>Copyright (C) 2022 Dutch Pilot. All rights reserved.</copyright>
+	<license>https://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@dutchpilot.com</authorEmail>
+	<authorUrl>https://dutchpilot.com</authorUrl>
+	<version>1.0</version>
+	<description>PLG_DUPI_ADDCODETOHEAD_XML_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<filename plugin="addcodetohead">addcodetohead.php</filename>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="containerid"
+					type="text"
+					size="20"
+					default=""
+					hint="Container id"
+					label="PLG_DUPI_ADDCODETOHEAD_CONTAINERID_LABEL"
+					description="PLG_DUPI_ADDCODETOHEAD_CONTAINERID_DESCRIPTION"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="Add Code To Head">https://dutchpilot.com/addcodetohead/update.xml</server>
+	</updateservers>
+</extension>

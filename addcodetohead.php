@@ -1,6 +1,6 @@
 <?php
 /**
- * @package    Plugin plg_dupi_addcodetohead
+ * @package    Plugin plg_system_addcodetohead
  *
  * @author     Dutch Pilot <info@dutchpilot.com>
  * @copyright  (C) 2022 Dutch Pilot <https://dutchpilot.com>

@@ -30,6 +30,6 @@ class plgSystemAddcodetoheadInstallerScript
 
 	public function install()
 	{
-		Factory::getDbo()->setQuery("UPDATE #__extensions SET enabled = 1 WHERE type = 'plugin' AND folder = 'system' AND element = 'kickyoofiles'")->execute();
+		Factory::getDbo()->setQuery("UPDATE #__extensions SET enabled = 1 WHERE type = 'plugin' AND folder = 'system' AND element = 'addcodetohead'")->execute();
 	}
 }

@@ -17,8 +17,10 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field name="note20" type="note" class="alert alert-warning" heading="h3" label="PLG_SYSTEM_ADDCODETOHEAD_CONTAINER_HEAD" description="PLG_SYSTEM_ADDCODETOHEAD_CONTAINER_DESC" />
-				<field name="containerid" type="text" size="10"	default="" hint="Container id" label="PLG_SYSTEM_ADDCODETOHEAD_CONTAINERID_LABEL" description="PLG_SYSTEM_ADDCODETOHEAD_CONTAINERID_DESCRIPTION" />
+				<field name="note20" type="note" class="alert alert-info container" heading="h3" label="PLG_SYSTEM_ADDCODETOHEAD_CONTAINER_HEAD" description="PLG_SYSTEM_ADDCODETOHEAD_CONTAINER_HEAD_DESC" />
+				<field name="containerid" type="text" size="65" default="" hint="PLG_SYSTEM_ADDCODETOHEAD_CONTAINERID_HINT" label="PLG_SYSTEM_ADDCODETOHEAD_CONTAINERID_LABEL" description="PLG_SYSTEM_ADDCODETOHEAD_CONTAINERID_DESC" />
+				<field name="note30" type="note" class="alert alert-info container" heading="h3" label="PLG_SYSTEM_ADDCODETOHEAD_MISC_HEAD" description="PLG_SYSTEM_ADDCODETOHEAD_MISC_HEAD_DESC" />
+				<field name="misc" type="textarea" rows="10" cols="65" default="" hint="PLG_SYSTEM_ADDCODETOHEAD_MISC_HINT" label="PLG_SYSTEM_ADDCODETOHEAD_MISC_LABEL" description="PLG_SYSTEM_ADDCODETOHEAD_MISC_DESC" />
 			</fieldset>
 		</fields>
 	</config>

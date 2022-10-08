@@ -19,6 +19,7 @@ class plgSystemAddcodetohead extends CMSPLugin
 	{
 		$addCodes = array();
 		$addCodes[] = $this->addTagManager();
+		$addCodes[] = $this->addBugherdProjectKey();
 		$addCodes[] = $this->addMiscellaneousCode();
 		
 		// Add codes and scripts to the end of the <head>-tag
@@ -43,6 +44,20 @@ class plgSystemAddcodetohead extends CMSPLugin
 				})(window,document,'script','dataLayer','" . $containerId . "');</script>";
 				
 			return $tagManager;
+		}
+	}
+	
+	// Add Bugherd project key to javascript
+	protected function addBugherdProjectKey()
+	{
+		// Get container id from plugin setting
+		$bhprojectkey = $this->params->get('bhprojectkey');
+		
+		if (trim($bhprojectkey) != '')
+		{
+			$bh = '<script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=' . $bhprojectkey . '" async="true"></script>';
+			
+			return $bh;
 		}
 	}
 	

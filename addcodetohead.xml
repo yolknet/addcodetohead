@@ -7,7 +7,7 @@
 	<license>https://www.gnu.org/copyleft/gpl.html</license>
 	<authorEmail>info@dutchpilot.com</authorEmail>
 	<authorUrl>https://dutchpilot.com</authorUrl>
-	<version>1.0.1</version>
+	<version>1.1</version>
 	<description>PLG_SYSTEM_ADDCODETOHEAD_XML_DESCRIPTION</description>
 	<scriptfile>script.php</scriptfile>
 	<files>
@@ -19,8 +19,19 @@
 			<fieldset name="basic">
 				<field name="note20" type="note" class="alert alert-info container" heading="h3" label="PLG_SYSTEM_ADDCODETOHEAD_CONTAINER_HEAD" description="PLG_SYSTEM_ADDCODETOHEAD_CONTAINER_HEAD_DESC" />
 				<field name="containerid" type="text" size="65" default="" hint="PLG_SYSTEM_ADDCODETOHEAD_CONTAINERID_HINT" label="PLG_SYSTEM_ADDCODETOHEAD_CONTAINERID_LABEL" description="PLG_SYSTEM_ADDCODETOHEAD_CONTAINERID_DESC" />
+				
+				
+				
+				
+				<field name="note40" type="note" class="alert alert-info container" heading="h3" label="PLG_SYSTEM_ADDCODETOHEAD_BUGHERD_HEAD" description="PLG_SYSTEM_ADDCODETOHEAD_BUGHERD_HEAD_DESC" />
+				<field name="bhprojectkey" type="text" size="65" default="" hint="PLG_SYSTEM_ADDCODETOHEAD_BHPROJECTKEY_HINT" label="PLG_SYSTEM_ADDCODETOHEAD_BHPROJECTKEY_LABEL" description="PLG_SYSTEM_ADDCODETOHEAD_BHPROJECTKEY_DESC" />
+				
+				
+				
+				
+				
 				<field name="note30" type="note" class="alert alert-info container" heading="h3" label="PLG_SYSTEM_ADDCODETOHEAD_MISC_HEAD" description="PLG_SYSTEM_ADDCODETOHEAD_MISC_HEAD_DESC" />
-				<field name="misc" type="textarea" rows="10" cols="65" default="" hint="PLG_SYSTEM_ADDCODETOHEAD_MISC_HINT" label="PLG_SYSTEM_ADDCODETOHEAD_MISC_LABEL" description="PLG_SYSTEM_ADDCODETOHEAD_MISC_DESC" />
+				<field name="misc" type="textarea" rows="10" cols="65" default="" filter="raw" hint="PLG_SYSTEM_ADDCODETOHEAD_MISC_HINT" label="PLG_SYSTEM_ADDCODETOHEAD_MISC_LABEL" description="PLG_SYSTEM_ADDCODETOHEAD_MISC_DESC" />
 			</fieldset>
 		</fields>
 	</config>
